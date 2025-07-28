@@ -197,6 +197,7 @@ in
   zsh
   steam
   git
+  alejandra
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
