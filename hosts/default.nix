@@ -25,5 +25,5 @@
       };
     };
 in {
-  denkplatte = mkHost "calypso" "x86_64-linux";
+  denkplatte = mkHost "denkplatte" "x86_64-linux";
 }
