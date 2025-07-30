@@ -1,6 +1,6 @@
-{ ... }: {
-    imports = [
-      ./locales
-      ./boot
-    ];
+{...}: {
+  imports = [
+    ./locales
+    ./boot
+  ];
 }

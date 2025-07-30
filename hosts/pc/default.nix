@@ -88,7 +88,6 @@
     cores = 0;
   };
 
-
   programs = {
     steam = {
       enable = true;
