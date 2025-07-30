@@ -1,26 +1,22 @@
 {
-  description = "DarJanu's nix conifg";
+  description = "Config flake";
 
-  inputs = {
-    # Nixpkgs
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable"; 
-  };
-
+  inputs.nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
+  inputs.nixvim.url = "github:nix-community/nixvim";
   outputs = {
     self,
     nixpkgs,
-    home-manager,
     ...
-  } @ inputs: let
-    inherit (self) outputs;
-    # Supported systems for your flake packages, shell, etc.
-    systems = [
-      "x86_64-linux"
-    ];
-    # This is a function that generates an attribute by calling a function you
-    # pass to it, with each system as an argument
-    forAllSystems = nixpkgs.lib.genAttrs systems;
-  in {
-    nixosConfigurations = import ./hosts inputs;
+  } @ inputs: {
+    nixosConfigurations.denkplatte = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      system = "x86_64-linux";
+      modules = [./hosts/denkplatte];
     };
+    nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      system = "x86_64-linux";
+      modules = [./hosts/pc];
+    };
+  };
 }
