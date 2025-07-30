@@ -17,6 +17,7 @@
       modules = [
         ./hosts/denkplatte
         ./system
+        ./user
       ];
     };
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
@@ -25,6 +26,7 @@
       modules = [
         ./hosts/pc
         ./system
+        ./user
       ];
     };
   };
