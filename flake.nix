@@ -1,8 +1,11 @@
 {
-  description = "Config flake";
+  description = "NixosOS configurations for my machines";
 
-  inputs.nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
-  inputs.nixvim.url = "github:nix-community/nixvim";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixvim.url = "github:nix-community/nixvim";
+  };
+
   outputs = {
     self,
     nixpkgs,
@@ -11,12 +14,18 @@
     nixosConfigurations.denkplatte = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       system = "x86_64-linux";
-      modules = [./hosts/denkplatte];
+      modules = [
+        ./hosts/denkplatte
+        ./system
+      ];
     };
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       system = "x86_64-linux";
-      modules = [./hosts/pc];
+      modules = [
+        ./hosts/pc
+        ./system
+      ];
     };
   };
 }
