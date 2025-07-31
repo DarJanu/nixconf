@@ -130,7 +130,7 @@
             };
           };
         };
-        oil.enable = true;
+        nvim-tree.enable = true;
         treesitter.enable = true;
         nvim-autopairs.enable = true;
       };
