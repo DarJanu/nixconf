@@ -94,19 +94,6 @@
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
     };
-
-    zsh = {
-      enable = true;
-      autosuggestions.enable = true;
-      syntaxHighlighting.enable = true;
-      ohMyZsh = {
-        enable = true;
-        theme = "agnoster";
-        plugins = [
-          "git"
-        ];
-      };
-    };
   };
 
   # Install firefox.
@@ -122,7 +109,6 @@
     wget
     powerline-fonts
     oh-my-zsh
-    zsh
     steam
     git
     alejandra

@@ -17,6 +17,7 @@
         ./hosts/denkplatte
         ./system
         ./user
+        ./programs
       ];
     };
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
@@ -26,6 +27,7 @@
         ./hosts/pc
         ./system
         ./user
+        ./programs
       ];
     };
   };
