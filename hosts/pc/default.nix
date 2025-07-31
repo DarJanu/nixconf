@@ -10,7 +10,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    inputs.nixvim.nixosModules.nixvim
   ];
 
   networking.hostName = "pc"; # Define your hostname.
@@ -108,38 +107,7 @@
         ];
       };
     };
-
-    nixvim = {
-      enable = true;
-
-      colorschemes.catppuccin.enable = true;
-      plugins = {
-        lualine = {
-          enable = true;
-          settings = {
-            options = {
-              theme = "auto";
-              icons_enabled = true;
-            };
-            sections = {
-              lualine_a = ["mode"];
-              lualine_b = ["branch" "diff"];
-              lualine_c = ["filename"];
-              lualine_y = ["progress"];
-              lualine_z = ["location"];
-            };
-          };
-        };
-        oil.enable = true;
-        treesitter.enable = true;
-        nvim-autopairs.enable = true;
-      };
-    };
   };
-
-  # Enable automatic login for the user.
-  services.displayManager.autoLogin.enable = true;
-  services.displayManager.autoLogin.user = "jetti";
 
   # Install firefox.
   programs.firefox.enable = true;
