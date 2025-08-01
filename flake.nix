@@ -18,6 +18,7 @@
         ./system
         ./user
         ./programs
+        ./dm
       ];
     };
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
@@ -28,6 +29,7 @@
         ./system
         ./user
         ./programs
+        ./dm
       ];
     };
   };
