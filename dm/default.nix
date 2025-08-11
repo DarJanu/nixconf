@@ -38,12 +38,11 @@
   services.picom = {
     enable = true;
     fade = true;
-    #    vSync = true;
     shadow = true;
     fadeDelta = 4;
     inactiveOpacity = 0.8;
     activeOpacity = 1;
-    #    backend = "glx";
+    backend = "glx";
     settings = {
       blur = {
         #method = "dual_kawase";
