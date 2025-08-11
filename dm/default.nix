@@ -21,6 +21,8 @@
       extraPackages = with pkgs; [
         dmenu #application launcher most people use
         i3blocks #if you are planning on using i3blocks over i3status
+        feh
+        conky
       ];
     };
   };
@@ -41,7 +43,7 @@
     shadow = true;
     fadeDelta = 4;
     inactiveOpacity = 0.8;
-    activeOpacity = 1;
+    activeOpacity = 0.95;
     backend = "glx";
     settings = {
       blur = {
