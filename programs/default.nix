@@ -24,6 +24,7 @@
     bash
     wget
     powerline-fonts
+    font-awesome
     alejandra
   ];
 }
