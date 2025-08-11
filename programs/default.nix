@@ -20,6 +20,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     wget
+    conky
     powerline-fonts
     alejandra
   ];
