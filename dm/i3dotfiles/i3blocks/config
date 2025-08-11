@@ -2,4 +2,6 @@
 command=date +%T
 interval=1
 
-
+[audio]
+label=
+interval=5

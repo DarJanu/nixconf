@@ -43,7 +43,7 @@
     shadow = true;
     fadeDelta = 4;
     inactiveOpacity = 0.8;
-    activeOpacity = 0.95;
+    activeOpacity = 0.9;
     backend = "glx";
     settings = {
       blur = {
