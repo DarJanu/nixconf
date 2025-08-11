@@ -26,5 +26,6 @@
     powerline-fonts
     font-awesome
     alejandra
+    playerctl
   ];
 }
