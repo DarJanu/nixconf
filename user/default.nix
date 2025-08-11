@@ -14,6 +14,7 @@
     packages = with pkgs; [
       kdePackages.kate
       kitty
+      obsidian
     ];
     shell = pkgs.zsh;
   };
