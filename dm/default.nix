@@ -12,6 +12,7 @@
       mako # notification daemon
       grim
       slurp
+      wofi
       dmenu # Dmenu is the default in the config but i recommend wofi since its wayland native
     ];
   };
@@ -20,11 +21,6 @@
   services.displayManager.sddm.wayland.enable = true;
   programs.waybar.enable = true;
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "at";
-    variant = "";
-  };
   services.picom = {
     enable = true;
     fade = true;
