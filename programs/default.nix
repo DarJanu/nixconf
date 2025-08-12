@@ -27,5 +27,6 @@
     font-awesome
     alejandra
     playerctl
+    pango
   ];
 }
