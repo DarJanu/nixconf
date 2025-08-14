@@ -11,6 +11,7 @@
       pkgs.xdg-desktop-portal-gtk
       pkgs.xdg-desktop-portal-wlr
     ];
+    xdgOpenUsePortal = true;
   };
 
   programs.sway = {
