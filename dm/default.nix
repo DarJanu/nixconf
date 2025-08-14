@@ -3,6 +3,13 @@
   pkgs,
   ...
 }: {
+  services.dbus.enable = true;
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  };
+
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true; # so that gtk works properly
