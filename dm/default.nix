@@ -7,7 +7,10 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-wlr
+    ];
   };
 
   programs.sway = {
@@ -27,21 +30,4 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
   programs.waybar.enable = true;
-
-  services.picom = {
-    enable = true;
-    fade = true;
-    shadow = true;
-    fadeDelta = 4;
-    inactiveOpacity = 0.85;
-    activeOpacity = 1;
-    backend = "glx";
-    settings = {
-      blur = {
-        #method = "dual_kawase";
-        background = true;
-        strength = 5;
-      };
-    };
-  };
 }
