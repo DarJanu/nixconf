@@ -4,7 +4,10 @@
   ...
 }: {
   programs.hyprland.enable = true;
-
+  environment.systemPackages = with pkgs; [
+    mako
+    hyprpolkitagent
+  ];
   services.greetd = {
     enable = true;
     settings = {

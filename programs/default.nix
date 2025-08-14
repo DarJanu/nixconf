@@ -23,13 +23,16 @@
     alsa-utils
     bash
     wget
-    powerline-fonts
-    font-awesome
     alejandra
     playerctl
     pango
     networkmanagerapplet
     wofi
     kdePackages.dolphin
+  ];
+  fonts.packages = with pkgs; [
+    powerline-fonts
+    font-awesome
+    nerd-fonts.jetbrains-mono
   ];
 }
