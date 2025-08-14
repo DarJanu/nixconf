@@ -5,28 +5,22 @@
 }: {
   services.dbus.enable = true;
 
-  xdg.portal = {
-    enable = true;
-    xdgOpenUsePortal = true;
-    wlr.enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-wlr
-    ];
-  };
+  environment.systemPackages = with pkgs; [
+    wofi
+    grim # screenshot functionality
+    slurp # screenshot functionality
+    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
+    mako # notification system developed by swaywm maintainer
+  ];
 
+  # Enable the gnome-keyring secrets vault.
+  # Will be exposed through DBus to programs willing to store secrets.
+  services.gnome.gnome-keyring.enable = true;
+
+  # enable Sway window manager
   programs.sway = {
     enable = true;
-    wrapperFeatures.gtk = true; # so that gtk works properly
-    extraPackages = with pkgs; [
-      swaylock
-      swayidle
-      mako # notification daemon
-      grim
-      slurp
-      wofi
-      dmenu # Dmenu is the default in the config but i recommend wofi since its wayland native
-    ];
+    wrapperFeatures.gtk = true;
   };
 
   services.displayManager.sddm.enable = true;
