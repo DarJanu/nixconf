@@ -29,7 +29,7 @@
     playerctl
     pango
     networkmanagerapplet
-    dmenu
+    wofi
     kdePackages.dolphin
   ];
 }
