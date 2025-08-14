@@ -29,5 +29,7 @@
     playerctl
     pango
     networkmanagerapplet
+    dmenu
+    kdePackages.dolphin
   ];
 }
