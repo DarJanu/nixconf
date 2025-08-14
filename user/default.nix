@@ -11,6 +11,7 @@
     isNormalUser = true;
     description = "Jetthaichal Janu";
     extraGroups = ["networkmanager" "wheel"];
+
     packages = with pkgs; [
       kdePackages.kate
       kitty
@@ -18,4 +19,7 @@
     ];
     shell = pkgs.zsh;
   };
+  services.xserver.layout = "at";
+  # Use same config for linux console
+  i18n.consoleUseXkbConfig = true;
 }
