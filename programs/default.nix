@@ -28,5 +28,6 @@
     alejandra
     playerctl
     pango
+    networkmanagerapplet
   ];
 }
