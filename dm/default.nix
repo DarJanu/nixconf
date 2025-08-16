@@ -7,6 +7,7 @@
   environment.systemPackages = with pkgs; [
     mako
     hyprpolkitagent
+    hyprcursor
   ];
   services.greetd = {
     enable = true;
