@@ -1,0 +1,24 @@
+{
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true
+  },
+  "tray": {
+    "spacing": 5
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity: >3}%",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "network": {
+    "format": "Disabled",
+    "format-wifi": "{essid}",
+    "format-ethernet": "Wired",
+    "format-disconneted": "Disconnected",
+    "on-click": "nm-connection-editor"
+  }
+}
