@@ -30,6 +30,7 @@
     networkmanagerapplet
     wofi
     kdePackages.dolphin
+    transmission_4
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
