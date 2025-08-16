@@ -3,6 +3,7 @@
     ./zsh
     ./git
     ./nvim
+    ./vmtools
   ];
   programs = {
     steam = {
