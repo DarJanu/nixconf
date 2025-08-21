@@ -21,6 +21,16 @@
         ./dm
       ];
     };
+    nixosConfigurations.R720 = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      system = "x86_64-linux";
+      modules = [
+        ./hosts/R720
+        ./system
+        ./user
+        ./programs
+      ];
+    };
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       system = "x86_64-linux";
