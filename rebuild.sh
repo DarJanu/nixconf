@@ -16,7 +16,7 @@ git diff -U0 '*.nix'
 echo "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
-sudo nixos-rebuild switch --flake .#$(hostname) &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+sudo nixos-rebuild switch --flake .#$(hostname)
 
 # Get current generation metadata
 current=$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | grep current)
