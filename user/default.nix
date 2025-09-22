@@ -16,6 +16,7 @@
       kdePackages.kate
       kitty
       obsidian
+      hugo
     ];
     shell = pkgs.zsh;
   };
