@@ -17,6 +17,7 @@
       kitty
       obsidian
       hugo
+      vlc
     ];
     shell = pkgs.zsh;
   };
