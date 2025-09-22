@@ -18,6 +18,7 @@
       obsidian
       hugo
       vlc
+      transmission_4
     ];
     shell = pkgs.zsh;
   };
