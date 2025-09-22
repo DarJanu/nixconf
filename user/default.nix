@@ -18,7 +18,7 @@
       obsidian
       hugo
       vlc
-      transmission_4
+      qbittorrent
     ];
     shell = pkgs.zsh;
   };
