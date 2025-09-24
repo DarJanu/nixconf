@@ -19,7 +19,6 @@
       hugo
       vlc
       qbittorrent
-      cloudflare-warp
     ];
     shell = pkgs.zsh;
   };
