@@ -20,6 +20,7 @@
       vlc
       qbittorrent
       blender
+      libreoffice-qt6-fresh
     ];
     shell = pkgs.zsh;
   };
