@@ -19,6 +19,7 @@
       hugo
       vlc
       qbittorrent
+      blender
     ];
     shell = pkgs.zsh;
   };
