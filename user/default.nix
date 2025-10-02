@@ -24,7 +24,7 @@
     ];
     shell = pkgs.zsh;
   };
-  services.xserver.layout = "at";
+  services.xserver.xkb.layout = "at";
   # Use same config for linux console
-  i18n.consoleUseXkbConfig = true;
+  console.useXkbConfig = true;
 }
