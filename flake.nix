@@ -21,6 +21,17 @@
         ./dm
       ];
     };
+    nixosConfigurations.freemwork = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      system = "x86_64-linux";
+      modules = [
+        ./hosts/freemwork
+        ./system
+        ./user
+        ./programs
+        ./dm
+      ];
+    };
     nixosConfigurations.R720 = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       system = "x86_64-linux";
