@@ -4,6 +4,7 @@
     ./git
     ./nvim
     ./vmtools
+    ./arduinotools
   ];
   programs = {
     steam = {
