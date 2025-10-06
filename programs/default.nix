@@ -6,6 +6,7 @@
     ./vmtools
     ./arduinotools
   ];
+  services.fwupd.enable = true;
   programs = {
     steam = {
       enable = true;
