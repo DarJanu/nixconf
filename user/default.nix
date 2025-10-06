@@ -21,6 +21,7 @@
       qbittorrent
       blender
       libreoffice-qt6-fresh
+      krita
     ];
     shell = pkgs.zsh;
   };
