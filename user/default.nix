@@ -22,6 +22,8 @@
       blender
       libreoffice-qt6-fresh
       krita
+      xournalpp
+      rnote
     ];
     shell = pkgs.zsh;
   };
