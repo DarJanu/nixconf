@@ -33,6 +33,8 @@
     wofi
     kdePackages.dolphin
     transmission_4
+    spotify
+    mono
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
