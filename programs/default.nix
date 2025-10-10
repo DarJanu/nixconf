@@ -35,6 +35,9 @@
     transmission_4
     spotify
     mono
+    gtk2
+    gtk3
+    gtk4
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
