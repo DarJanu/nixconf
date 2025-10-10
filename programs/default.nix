@@ -38,6 +38,7 @@
     gtk2
     gtk3
     gtk4
+    cups
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
