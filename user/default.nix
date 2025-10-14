@@ -24,6 +24,7 @@
       krita
       xournalpp
       rnote
+      tradingview
     ];
     shell = pkgs.zsh;
   };
