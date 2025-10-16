@@ -20,6 +20,7 @@
           nvim-treesitter-parsers.nasm
           nvim-treesitter-parsers.c
           nvim-treesitter-parsers.python
+          nvim-treesitter-parsers.nix
         ]; # Loaded automatically
         opt = []; # Optional plugins (none here)
       };
