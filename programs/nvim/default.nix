@@ -10,7 +10,17 @@
       '';
 
       packages.myVimPackage = with pkgs.vimPlugins; {
-        start = [fugitive nerdtree vim-airline nvim-treesitter mason-nvim nvim-lspconfig nvim-treesitter-parsers.nasm]; # Loaded automatically
+        start = [
+          fugitive
+          nerdtree
+          vim-airline
+          nvim-treesitter
+          mason-nvim
+          nvim-lspconfig
+          nvim-treesitter-parsers.nasm
+          nvim-treesitter-parsers.c
+          nvim-treesitter-parsers.python
+        ]; # Loaded automatically
         opt = []; # Optional plugins (none here)
       };
     };
