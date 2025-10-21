@@ -39,6 +39,7 @@
     gtk3
     gtk4
     cups
+    jre
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
