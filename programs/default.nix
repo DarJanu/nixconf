@@ -40,6 +40,8 @@
     gtk4
     cups
     jre
+    #winboat
+    mozillavpn
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
