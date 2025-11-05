@@ -42,6 +42,7 @@
     jre
     winboat
     mozillavpn
+    docker-compose
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
