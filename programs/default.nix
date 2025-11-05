@@ -40,7 +40,7 @@
     gtk4
     cups
     jre
-    #winboat
+    winboat
     mozillavpn
   ];
   fonts.packages = with pkgs; [
