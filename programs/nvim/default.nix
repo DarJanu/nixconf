@@ -11,6 +11,7 @@
 
       packages.myVimPackage = with pkgs.vimPlugins; {
         start = [
+          hex-nvim
           fugitive
           nerdtree
           vim-airline
