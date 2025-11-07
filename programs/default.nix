@@ -43,6 +43,7 @@
     winboat
     mozillavpn
     docker-compose
+    wine
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
