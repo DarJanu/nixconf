@@ -44,6 +44,7 @@
     mozillavpn
     docker-compose
     wine
+    calibre
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
