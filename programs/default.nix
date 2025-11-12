@@ -22,6 +22,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    #gns3
+    gns3-gui
+    gns3-server
+
+    #random stuffs
     acpi
     alsa-utils
     bash
