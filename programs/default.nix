@@ -27,6 +27,7 @@
     gns3-server
 
     #random stuffs
+    tailscale
     acpi
     alsa-utils
     bash
