@@ -22,6 +22,8 @@
       blender
       libreoffice-qt6-fresh
       krita
+      inkscape
+      gimp
       xournalpp
       rnote
       tradingview
