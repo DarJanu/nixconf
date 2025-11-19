@@ -5,7 +5,7 @@ self: super: {
       owner = "GNS3";
       repo = "gns3-gui";
       rev = "v${version}";
-      sha256 = "sha256-urof5f5nsX6kdDIhmVWyK76sEJxMPhYRqD7TXSnwV/A="; # replace with actual hash
+      sha256 = "sha256-6jblQakNpoSQXfy5pU68Aedg661VcwpqQilvqOV15pQ="; # replace with actual hash
     };
   });
 }
