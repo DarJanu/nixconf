@@ -22,11 +22,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-  services.gns3-server = {
-    enable = true;
-    ubridge.enable = true;
-  };
-
   environment.systemPackages = with pkgs; [
     #random stuffs
     gns3-gui
