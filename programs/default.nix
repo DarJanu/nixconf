@@ -21,10 +21,15 @@
   services.tailscale.enable = true;
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
+  services.gns3-server = {
+    enable = true;
+    ubridge.enable = true;
+  };
+
   environment.systemPackages = with pkgs; [
     #gns3
     gns3-gui
-    gns3-server
 
     #random stuffs
     acpi
