@@ -29,6 +29,7 @@
   environment.systemPackages = with pkgs; [
     #random stuffs
     gns3-gui
+    inetutils
     acpi
     alsa-utils
     bash
