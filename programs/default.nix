@@ -43,7 +43,6 @@
     gtk4
     cups
     jre
-    winboat
     mozillavpn
     docker-compose
     wine
