@@ -29,6 +29,7 @@
   environment.systemPackages = with pkgs; [
     #random stuffs
     gns3-gui
+    wireshark
     inetutils
     acpi
     alsa-utils
