@@ -28,10 +28,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-    #gns3
-    gns3-gui
-
     #random stuffs
+    gns3-gui
     acpi
     alsa-utils
     bash
