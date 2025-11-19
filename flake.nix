@@ -2,6 +2,7 @@
   description = "NixosOS configurations for my machines";
 
   inputs = {
+    #nixpkgs.url = "github:DarJanu/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
