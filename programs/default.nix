@@ -6,6 +6,10 @@
     ./vmtools
     ./arduinotools
   ];
+  nixpkgs.overlays = [
+    (import ../flakes/gns3-overlay.nix)
+  ];
+
   services.fwupd.enable = true;
   programs = {
     steam = {
@@ -24,7 +28,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
-    gns3-gui
+    #gns3-gui
     acpi
     alsa-utils
     bash
