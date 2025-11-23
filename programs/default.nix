@@ -28,6 +28,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    gh
     gns3-gui
     gns3-server
     wireshark
