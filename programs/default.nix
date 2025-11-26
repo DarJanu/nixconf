@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  pkgs-unstable,
+  ...
+}: {
   imports = [
     ./zsh
     ./git
@@ -9,7 +13,6 @@
   nixpkgs.overlays = [
     (import ../flakes/gns3-overlay.nix)
   ];
-
   services.fwupd.enable = true;
   programs = {
     steam = {
@@ -25,7 +28,6 @@
   services.tailscale.enable = true;
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-
   environment.systemPackages = with pkgs; [
     #random stuffs
     gh
