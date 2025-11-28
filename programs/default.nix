@@ -13,6 +13,7 @@
   nixpkgs.overlays = [
     (import ../flakes/gns3-overlay.nix)
   ];
+  services.onedrive.enable = true;
   services.fwupd.enable = true;
   programs = {
     steam = {
