@@ -24,5 +24,8 @@ current=$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system
 # Commit all changes witih the generation metadata
 git commit -am "$current"
 
+# Delete all generations older than 5
+sudo nix-collect-garbage --delete-older-than 5
+
 # Back to where you were
 popd
