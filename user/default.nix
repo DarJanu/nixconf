@@ -11,7 +11,6 @@
     isNormalUser = true;
     description = "Jetthaichal Janu";
     extraGroups = ["networkmanager" "wheel" "libvirtd" "docker" "ubridge"];
-
     packages = with pkgs; [
       kdePackages.kate
       kitty
@@ -30,6 +29,7 @@
     ];
     shell = pkgs.zsh;
   };
+  services.udisks2.enable = true;
   services.xserver.xkb.layout = "at";
   # Use same config for linux console
   console.useXkbConfig = true;
