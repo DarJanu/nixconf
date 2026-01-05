@@ -31,6 +31,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     #random stuffs
+    thonny
     prusa-slicer
     gh
     gns3-gui
