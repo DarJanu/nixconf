@@ -11,7 +11,7 @@
     ./arduinotools
   ];
   nixpkgs.overlays = [
-    (import ../flakes/gns3-overlay.nix)
+    (import ../flakes/rnote-overlay.nix)
   ];
   services.onedrive.enable = true;
   services.fwupd.enable = true;
