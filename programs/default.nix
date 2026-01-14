@@ -10,9 +10,9 @@
     ./vmtools
     ./arduinotools
   ];
-  nixpkgs.overlays = [
-    (import ../flakes/rnote-overlay.nix)
-  ];
+  #  nixpkgs.overlays = [
+  #    (import ../flakes/rnote-overlay.nix)
+  #  ];
   services.onedrive.enable = true;
   services.fwupd.enable = true;
   programs = {
