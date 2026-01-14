@@ -30,7 +30,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
-    joplin
+    joplin-desktop
     pineflash
     thonny
     prusa-slicer
