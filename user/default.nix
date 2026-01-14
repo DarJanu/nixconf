@@ -23,7 +23,6 @@
       krita
       inkscape
       gimp
-      xournalpp
       rnote
       tradingview
     ];
