@@ -30,6 +30,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    freecad
     pineflash
     thonny
     prusa-slicer
