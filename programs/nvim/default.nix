@@ -11,7 +11,7 @@
 
       packages.myVimPackage = with pkgs.vimPlugins; {
         start = [
-          vim-airline
+          lazy-nvim
         ]; # Loaded automatically
         opt = []; # Optional plugins (none here)
       };
