@@ -11,6 +11,8 @@
 
       packages.myVimPackage = with pkgs.vimPlugins; {
         start = [
+          fzf-lua
+          fzf-lsp-nvim
           hex-nvim
           fugitive
           nerdtree
