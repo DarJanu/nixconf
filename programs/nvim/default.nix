@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   programs.neovim = {
     enable = true;
+    defaultEditor = true;
 
     configure = {
       customRC = ''
@@ -11,11 +12,13 @@
 
       packages.myVimPackage = with pkgs.vimPlugins; {
         start = [
-          lazy-nvim
-          lazy-lsp-nvim
           vim-airline
+          telescope-nvim
+          fzf-lsp-nvim
+          vim-lsp
         ]; # Loaded automatically
-        opt = []; # Optional plugins (none here)
+        opt = [
+        ]; # Optional plugins (none here)
       };
     };
   };
