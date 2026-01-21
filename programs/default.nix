@@ -67,6 +67,7 @@
     docker-compose
     wine
     calibre
+    wireshark
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
