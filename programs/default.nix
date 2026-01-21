@@ -30,7 +30,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
-    nil
+    nixd
     openscad
     freecad
     pineflash

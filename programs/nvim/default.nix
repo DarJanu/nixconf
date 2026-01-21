@@ -16,6 +16,7 @@
           telescope-nvim
           fzf-lsp-nvim
           vim-lsp
+          nvim-lspconfig
         ]; # Loaded automatically
         opt = [
         ]; # Optional plugins (none here)
