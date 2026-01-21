@@ -14,9 +14,13 @@
   #    (import ../flakes/rnote-overlay.nix)
   #  ];
   services.onedrive.enable = true;
-  programs.wireshark.enable = true;
   services.fwupd.enable = true;
   programs = {
+    wireshark = {
+      enable = true;
+      dumpcap.enable = true;
+      usbmon.enable = true;
+    };
     steam = {
       enable = true;
       remotePlay.openFirewall = true;
