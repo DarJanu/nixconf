@@ -14,6 +14,7 @@
   #    (import ../flakes/rnote-overlay.nix)
   #  ];
   services.onedrive.enable = true;
+  programs.wireshark.enable = true;
   services.fwupd.enable = true;
   programs = {
     steam = {
@@ -39,7 +40,6 @@
     gh
     gns3-gui
     gns3-server
-    wireshark
     inetutils
     acpi
     alsa-utils
