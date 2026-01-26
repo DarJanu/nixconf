@@ -15,6 +15,7 @@
   #  ];
   services.onedrive.enable = true;
   services.fwupd.enable = true;
+
   programs = {
     wireshark = {
       enable = true;
@@ -35,7 +36,6 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
-    zfs
     nixd
     openscad
     freecad

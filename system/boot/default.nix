@@ -5,4 +5,6 @@
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.supportedFilesystems = ["zfs"];
+  boot.zfs.package = pkgs.zfs_unstable;
 }
