@@ -35,7 +35,6 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
-    opencv
     nixd
     openscad
     freecad
