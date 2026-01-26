@@ -35,6 +35,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    zfs
     nixd
     openscad
     freecad
