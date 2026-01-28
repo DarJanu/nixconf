@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = [
     pkgs.arduino-ide
+    pkgs.processing
   ];
   services.udev.extraRules = ''
     # Arduino Portenta H7 DFU mode
