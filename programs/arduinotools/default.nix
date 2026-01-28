@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = [
     pkgs.arduino-ide
+    pkgs.arduino
     pkgs.processing
   ];
   services.udev.extraRules = ''
