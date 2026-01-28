@@ -36,6 +36,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    python3
     nixd
     openscad
     freecad
