@@ -36,6 +36,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    vscode
     qtcreator
     python3
     nixd
