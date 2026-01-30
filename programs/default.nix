@@ -34,8 +34,16 @@
   nixpkgs.config.allowUnfree = true;
   services.tailscale.enable = true;
 
+  security.wrappers.ubridge = {
+    source = "${pkgs.ubridge}/bin/ubridge";
+    owner = "root";
+    group = "root";
+    capabilities = "cap_net_admin,cap_net_raw+ep";
+  };
+
   environment.systemPackages = with pkgs; [
     #random stuffs
+    ubridge
     vscode
     qtcreator
     python3
