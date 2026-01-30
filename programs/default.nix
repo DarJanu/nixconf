@@ -43,6 +43,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    screen
     ubridge
     vscode
     qtcreator
