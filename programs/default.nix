@@ -43,6 +43,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    mediawriter
     screen
     ubridge
     vscode
