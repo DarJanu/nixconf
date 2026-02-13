@@ -41,6 +41,8 @@
     capabilities = "cap_net_admin,cap_net_raw+ep";
   };
 
+  programs.kdeconnect.enable = true;
+
   environment.systemPackages = with pkgs; [
     #random stuffs
     mediawriter
