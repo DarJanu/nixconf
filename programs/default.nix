@@ -45,6 +45,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    protonvpn-gui
     mediawriter
     screen
     ubridge
