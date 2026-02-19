@@ -43,8 +43,12 @@
 
   programs.kdeconnect.enable = true;
 
+  #RTL-SDR
+  hardware.rtl-sdr.enable = true;
+
   environment.systemPackages = with pkgs; [
     #random stuffs
+    sdrpp
     protonvpn-gui
     mediawriter
     screen
