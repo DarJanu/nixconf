@@ -49,6 +49,7 @@
   environment.systemPackages = with pkgs; [
     #random stuffs
     sdrpp
+    satdump
     protonvpn-gui
     mediawriter
     screen
