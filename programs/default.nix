@@ -50,6 +50,10 @@
     #random stuffs
     sdrpp
     satdump
+
+    root
+    sofa
+
     protonvpn-gui
     mediawriter
     screen
