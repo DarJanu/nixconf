@@ -58,6 +58,7 @@
     octave
     csxcad
     xnec2c
+    kicad
 
     protonvpn-gui
     mediawriter
