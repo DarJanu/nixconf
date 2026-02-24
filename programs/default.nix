@@ -56,6 +56,7 @@
     sofa
     julia-lts
     octave
+    csxcad
 
     protonvpn-gui
     mediawriter
