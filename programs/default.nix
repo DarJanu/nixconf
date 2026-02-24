@@ -54,6 +54,8 @@
 
     root
     sofa
+    julia-lts
+    octave
 
     protonvpn-gui
     mediawriter
