@@ -50,6 +50,7 @@
     #random stuffs
     sdrpp
     satdump
+    openems
 
     root
     sofa
