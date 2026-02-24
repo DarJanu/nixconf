@@ -57,6 +57,7 @@
     julia-lts
     octave
     csxcad
+    xnec2c
 
     protonvpn-gui
     mediawriter
