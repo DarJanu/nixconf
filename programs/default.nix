@@ -57,6 +57,7 @@
     julia-lts
     octave
     csxcad
+    appcsxcad
     xnec2c
     kicad
     fritzing
