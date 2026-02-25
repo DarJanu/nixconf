@@ -61,6 +61,7 @@
     xnec2c
     kicad
     fritzing
+    paraview
 
     protonvpn-gui
     mediawriter
