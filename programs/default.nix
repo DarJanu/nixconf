@@ -59,6 +59,7 @@
     csxcad
     xnec2c
     kicad
+    fritzing
 
     protonvpn-gui
     mediawriter
