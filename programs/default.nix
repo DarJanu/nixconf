@@ -48,6 +48,8 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    nanovna-qt
+    nanovna-saver
     sdrpp
     satdump
     #openems
