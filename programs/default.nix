@@ -50,10 +50,10 @@
     #random stuffs
     sdrpp
     satdump
-    openems
+    #openems
 
-    root
-    sofa
+    #root
+    #sofa
     julia-lts
     octave
     csxcad
