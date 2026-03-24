@@ -52,8 +52,8 @@
     satdump
     #openems
 
-    #root
-    #sofa
+    root
+    sofa
     julia-lts
     octave
     csxcad
