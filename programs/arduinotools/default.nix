@@ -6,6 +6,8 @@
     pkgs.arduinoOTA
     pkgs.arduino-core
     pkgs.processing
+    pkgs.platformio
+    pkgs.esptool
   ];
   services.udev.extraRules = ''
     # Arduino Portenta H7 DFU mode
