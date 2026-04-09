@@ -63,6 +63,8 @@
     fritzing
     paraview
 
+    ckan
+
     protonvpn-gui
     mediawriter
     screen
