@@ -30,7 +30,6 @@
         ./user
         ./programs
         ./dm
-        ./flakes
       ];
     };
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
