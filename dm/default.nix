@@ -3,6 +3,9 @@
   pkgs,
   ...
 }: {
+  environment.systemPackages = [
+    pkgs.x11docker
+  ];
   services.xserver.enable = true; # optional
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
