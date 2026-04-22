@@ -32,4 +32,12 @@
   services.xserver.xkb.layout = "at";
   # Use same config for linux console
   console.useXkbConfig = true;
+  systemd.user.services.xhost-docker = {
+    description = "Allow Docker containers to access X11";
+    wantedBy = ["default.target"];
+    after = ["graphical-session.target"];
+    serviceConfig = {
+      ExecStart = "${pkgs.xorg.xhost}/bin/xhost +local:docker";
+    };
+  };
 }
