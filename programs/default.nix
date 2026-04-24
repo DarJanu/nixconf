@@ -8,7 +8,7 @@
     ./git
     ./nvim
     ./vmtools
-    ./arduinotools
+    #    ./arduinotools
   ];
   #  nixpkgs.overlays = [
   #    (import ../flakes/rnote-overlay.nix)
@@ -67,7 +67,7 @@
 
     ckan
 
-    protonvpn-gui
+    proton-vpn
     mediawriter
     screen
     ubridge

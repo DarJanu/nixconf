@@ -3,7 +3,7 @@
     pkgs.arduino-ide
     pkgs.arduino-cli
     pkgs.arduino
-    pkgs.arduinoOTA
+    pkgs.arduino-ota
     pkgs.arduino-core
     pkgs.processing
     pkgs.platformio

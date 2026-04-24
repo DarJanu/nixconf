@@ -37,7 +37,7 @@
     wantedBy = ["default.target"];
     after = ["graphical-session.target"];
     serviceConfig = {
-      ExecStart = "${pkgs.xorg.xhost}/bin/xhost +local:docker";
+      ExecStart = "${pkgs.xhost}/bin/xhost +local:docker";
     };
   };
 }
