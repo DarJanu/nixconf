@@ -49,6 +49,7 @@
   environment.systemPackages = with pkgs; [
     #random stuffs
     talosctl
+    kubectl
     nanovna-qt
     nanovna-saver
     sdrpp
