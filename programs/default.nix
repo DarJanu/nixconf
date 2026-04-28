@@ -50,6 +50,7 @@
     #random stuffs
     talosctl
     kubectl
+    helm
     nanovna-qt
     nanovna-saver
     sdrpp
