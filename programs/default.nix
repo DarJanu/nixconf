@@ -48,6 +48,7 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    talosctl
     nanovna-qt
     nanovna-saver
     sdrpp
