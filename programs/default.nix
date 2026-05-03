@@ -48,6 +48,8 @@
 
   environment.systemPackages = with pkgs; [
     #random stuffs
+    minio-client
+    cilium-cli
     talosctl
     kubectl
     kubernetes-helm
