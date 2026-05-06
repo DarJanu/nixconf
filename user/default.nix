@@ -25,6 +25,7 @@
       gimp
       rnote
       tradingview
+      claude-code
     ];
     shell = pkgs.zsh;
   };
