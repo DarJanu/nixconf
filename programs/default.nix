@@ -1,8 +1,4 @@
-{
-  pkgs,
-  pkgs-unstable,
-  ...
-}: {
+{pkgs, ...}: {
   imports = [
     ./zsh
     ./git
@@ -10,9 +6,6 @@
     ./vmtools
     #    ./arduinotools
   ];
-  #  nixpkgs.overlays = [
-  #    (import ../flakes/rnote-overlay.nix)
-  #  ];
   services.onedrive.enable = true;
   services.fwupd.enable = true;
 
@@ -30,7 +23,6 @@
     };
     firefox.enable = true;
   };
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   services.tailscale.enable = true;
 
@@ -43,11 +35,9 @@
 
   programs.kdeconnect.enable = true;
 
-  #RTL-SDR
   hardware.rtl-sdr.enable = true;
 
   environment.systemPackages = with pkgs; [
-    #random stuffs
     minio-client
     cilium-cli
     talosctl
@@ -57,7 +47,6 @@
     nanovna-saver
     sdrpp
     satdump
-    #openems
 
     root
     sofa
