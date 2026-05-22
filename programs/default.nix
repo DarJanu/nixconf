@@ -101,6 +101,7 @@
     wine
     calibre
     wireshark
+    rawtherapee
   ];
   fonts.packages = with pkgs; [
     powerline-fonts
