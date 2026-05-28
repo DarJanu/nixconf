@@ -63,6 +63,7 @@
     ckan
 
     proton-vpn
+    cloudflared
     mediawriter
     screen
     ubridge
