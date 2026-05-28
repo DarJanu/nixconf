@@ -58,6 +58,7 @@
     kicad
     fritzing
     paraview
+    librecad
 
     ckan
 
