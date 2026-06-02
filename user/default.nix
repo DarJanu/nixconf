@@ -18,6 +18,7 @@
       qbittorrent
       blender
       libreoffice-qt6-fresh
+      hunspell
       krita
       inkscape
       gimp
