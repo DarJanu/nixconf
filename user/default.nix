@@ -17,7 +17,7 @@
       vlc
       qbittorrent
       blender
-      libreoffice-qt6-fresh
+      libreoffice-qt
       hunspell
       krita
       inkscape
