@@ -17,7 +17,7 @@
       vlc
       qbittorrent
       blender
-      libreoffice-qt
+      libreoffice-fresh
       hunspell
       krita
       inkscape
@@ -28,6 +28,7 @@
     ];
     shell = pkgs.zsh;
   };
+  environment.sessionVariables = {GTK_THEME = "Adwaita";};
   services.udisks2.enable = true;
   services.xserver.xkb.layout = "at";
   # Use same config for linux console
