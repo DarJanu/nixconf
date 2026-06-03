@@ -15,6 +15,7 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/denkplatte
+        ./hosts/shared
         ./system
         ./user
         ./programs
@@ -26,6 +27,7 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/freemwork
+        ./hosts/shared
         ./system
         ./user
         ./programs
@@ -37,6 +39,7 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/pc
+        ./hosts/shared
         ./system
         ./user
         ./programs

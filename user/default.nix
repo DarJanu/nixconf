@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   # Define a user account.
   users.users.jetti = {
     isNormalUser = true;
