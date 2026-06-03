@@ -97,6 +97,7 @@
     gtk3
     gtk4
     cups
+    libgdiplus
     jre
     mozillavpn
     docker-compose
