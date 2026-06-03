@@ -36,7 +36,7 @@
   programs.kdeconnect.enable = true;
 
   hardware.rtl-sdr.enable = true;
-
+  services.flatpak.enable = true;
   environment.systemPackages = with pkgs; [
     minio-client
     cilium-cli
