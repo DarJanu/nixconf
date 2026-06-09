@@ -4,6 +4,11 @@
     pkgs.xhost
   ];
   services.xserver.enable = true;
-  services.xserver.desktopManager.cinnamon.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
+  # Enable Plasma
+  services = {
+    desktopManager.plasma6.enable = true;
+
+    # Default display manager for Plasma
+    displayManager.plasma-login-manager.enable = true;
+  };
 }
