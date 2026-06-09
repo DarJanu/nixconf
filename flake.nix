@@ -3,10 +3,15 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
+    stylix,
     nixpkgs,
     ...
   } @ inputs: {
@@ -26,6 +31,7 @@
       specialArgs = {inherit inputs;};
       system = "x86_64-linux";
       modules = [
+        stylix.nixosModules.stylix
         ./hosts/freemwork
         ./hosts/shared
         ./system

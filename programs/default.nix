@@ -71,7 +71,6 @@
     qtcreator
     python3
     nixd
-    openscad
     freecad
     pineflash
     thonny
