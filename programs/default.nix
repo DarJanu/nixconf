@@ -37,15 +37,28 @@
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc.lib
     zlib
+    bzip2
     libGL
+    nss
+    nspr
     libX11
+    libXcomposite
+    libXdamage
+    libXfixes
+    libXrandr
+    libXtst
     libXext
     libXrender
     libxcb
     libXau
+    libxkbcommon
     freetype
-    nss
-    nspr
+    fontconfig
+    expat
+    dbus
+    alsa-lib
+    glib
+    krb5
   ];
 
   programs.kdeconnect.enable = true;
