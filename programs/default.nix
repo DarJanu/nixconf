@@ -59,6 +59,10 @@
     alsa-lib
     glib
     krb5
+    xcbutilwm
+    xcbutilimage
+    xcbutilkeysyms
+    xcbutilrenderutil
   ];
 
   programs.kdeconnect.enable = true;
