@@ -38,13 +38,14 @@
     stdenv.cc.cc.lib
     zlib
     libGL
-    xorg.libX11
-    xorg.libXext
-    xorg.libXrender
-    xorg.libxcb
-    xorg.libXau
+    libX11
+    libXext
+    libXrender
+    libxcb
+    libXau
     freetype
     nss
+    nspr
   ];
 
   programs.kdeconnect.enable = true;
