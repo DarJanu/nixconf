@@ -52,8 +52,6 @@
     libxcb
     libXau
     libxkbcommon
-    freetype
-    fontconfig
     expat
     dbus
     alsa-lib
