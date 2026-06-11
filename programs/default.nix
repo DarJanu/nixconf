@@ -33,6 +33,20 @@
     capabilities = "cap_net_admin,cap_net_raw+ep";
   };
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc.lib
+    zlib
+    libGL
+    xorg.libX11
+    xorg.libXext
+    xorg.libXrender
+    xorg.libxcb
+    xorg.libXau
+    freetype
+    nss
+  ];
+
   programs.kdeconnect.enable = true;
 
   hardware.rtl-sdr.enable = true;
