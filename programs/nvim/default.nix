@@ -80,7 +80,22 @@
           end,
         })
 
-        vim.lsp.enable({ 'nixd', 'lua_ls', 'pyright', 'bashls' })
+        vim.lsp.enable({
+          -- nix
+          'nixd',
+          -- lua / shell / python
+          'lua_ls', 'pyright', 'bashls',
+          -- c / c++ / assembly
+          'clangd', 'asm_lsp',
+          -- c#
+          'csharp_ls',
+          -- hdl
+          'vhdl_ls', 'veridian',
+          -- systems / web / misc
+          'rust_analyzer', 'gopls',
+          'ts_ls', 'html', 'cssls', 'jsonls', 'eslint',
+          'yamlls', 'marksman',
+        })
 
         -- Telescope
         local tb = require('telescope.builtin')
@@ -111,8 +126,27 @@
   };
 
   environment.systemPackages = with pkgs; [
+    # already-present servers
     lua-language-server
     pyright
     bash-language-server
+    nixd
+    # c / c++ / assembly
+    clang-tools
+    asm-lsp
+    # c#
+    csharp-ls
+    # hdl
+    vhdl-ls
+    veridian
+    # systems / web / misc
+    rust-analyzer
+    gopls
+    typescript-language-server
+    typescript
+    nodejs
+    vscode-langservers-extracted
+    yaml-language-server
+    marksman
   ];
 }
