@@ -20,6 +20,7 @@
       rnote
       tradingview
       claude-code
+      nextcloud-client
     ];
     shell = pkgs.zsh;
   };
