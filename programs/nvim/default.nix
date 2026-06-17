@@ -61,23 +61,23 @@
 
         -- LSP
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
-        local lspconfig = require('lspconfig')
 
-        local on_attach = function(_, bufnr)
-          local opts = { noremap = true, silent = true, buffer = bufnr }
-          vim.keymap.set('n', 'gd',         vim.lsp.buf.definition,   opts)
-          vim.keymap.set('n', 'K',          vim.lsp.buf.hover,        opts)
-          vim.keymap.set('n', 'gi',         vim.lsp.buf.implementation, opts)
-          vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename,       opts)
-          vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action,  opts)
-          vim.keymap.set('n', 'gr',         vim.lsp.buf.references,   opts)
-          vim.keymap.set('n', '[d',         vim.diagnostic.goto_prev, opts)
-          vim.keymap.set('n', ']d',         vim.diagnostic.goto_next, opts)
-        end
+        vim.lsp.config('*', {
+          capabilities = capabilities,
+          on_attach = function(_, bufnr)
+            local opts = { noremap = true, silent = true, buffer = bufnr }
+            vim.keymap.set('n', 'gd',         vim.lsp.buf.definition,     opts)
+            vim.keymap.set('n', 'K',          vim.lsp.buf.hover,          opts)
+            vim.keymap.set('n', 'gi',         vim.lsp.buf.implementation, opts)
+            vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename,         opts)
+            vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action,    opts)
+            vim.keymap.set('n', 'gr',         vim.lsp.buf.references,     opts)
+            vim.keymap.set('n', '[d',         vim.diagnostic.goto_prev,   opts)
+            vim.keymap.set('n', ']d',         vim.diagnostic.goto_next,   opts)
+          end,
+        })
 
-        for _, lsp in ipairs({ 'nixd', 'lua_ls', 'pyright', 'bashls' }) do
-          lspconfig[lsp].setup({ on_attach = on_attach, capabilities = capabilities })
-        end
+        vim.lsp.enable({ 'nixd', 'lua_ls', 'pyright', 'bashls' })
 
         -- Telescope
         local tb = require('telescope.builtin')
