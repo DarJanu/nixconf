@@ -21,6 +21,14 @@
         vim.opt.signcolumn = "yes"
         vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
+        -- Inline diagnostic messages
+        vim.diagnostic.config({
+          virtual_text  = { prefix = '●' },
+          signs         = true,
+          underline     = true,
+          update_in_insert = false,
+        })
+
         -- Snippets
         local luasnip = require('luasnip')
         require('luasnip.loaders.from_vscode').lazy_load()
@@ -60,6 +68,7 @@
             { { name = 'nvim_lsp' }, { name = 'luasnip' } },
             { { name = 'buffer' },   { name = 'path' } }
           ),
+          experimental = { ghost_text = true },
         })
 
         -- LSP
