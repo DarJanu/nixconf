@@ -6,6 +6,9 @@
     configure = {
       customRC = ''
         lua << EOF
+        -- Theme
+        vim.cmd.colorscheme('base16-brewer')
+
         -- Options
         vim.opt.number = true
         vim.opt.relativenumber = true
@@ -93,6 +96,7 @@
           vim-airline
           telescope-nvim
           plenary-nvim
+          base16-nvim
           nvim-lspconfig
           nvim-cmp
           cmp-nvim-lsp
