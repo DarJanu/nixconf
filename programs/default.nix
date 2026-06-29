@@ -77,6 +77,7 @@
     nanovna-saver
     sdrpp
     satdump
+    sdrangel
 
     root
     sofa
