@@ -6,6 +6,7 @@
     ./vmtools
     #    ./arduinotools
   ];
+
   services.onedrive.enable = true;
   services.fwupd.enable = true;
 
@@ -78,6 +79,7 @@
     sdrpp
     satdump
     sdrangel
+    readsb
 
     root
     sofa
