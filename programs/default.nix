@@ -95,6 +95,7 @@
 
     ckan
 
+    btop
     proton-vpn
     cloudflared
     mediawriter

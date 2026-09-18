@@ -21,6 +21,7 @@
       tradingview
       claude-code
       nextcloud-client
+      kdePackages.plasma-keyboard
     ];
     shell = pkgs.zsh;
   };
