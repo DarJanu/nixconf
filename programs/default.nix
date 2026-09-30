@@ -82,6 +82,7 @@
     readsb
 
     root
+    nmap
     sofa
     julia-lts
     octave
