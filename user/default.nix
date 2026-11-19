@@ -8,17 +8,14 @@
       kdePackages.kate
       kitty
       obsidian
-      hugo
       vlc
       qbittorrent
       blender
-      libreoffice-fresh
+      libreoffice
       hunspell
       krita
-      inkscape
       gimp
       rnote
-      tradingview
       claude-code
       nextcloud-client
       kdePackages.plasma-keyboard

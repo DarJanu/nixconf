@@ -98,8 +98,6 @@
           'clangd', 'asm_lsp',
           -- c#
           'csharp_ls',
-          -- hdl
-          'vhdl_ls', 'veridian',
           -- systems / web / misc
           'rust_analyzer', 'gopls',
           'ts_ls', 'html', 'cssls', 'jsonls', 'eslint',
@@ -145,9 +143,6 @@
     asm-lsp
     # c#
     csharp-ls
-    # hdl
-    vhdl-ls
-    veridian
     # systems / web / misc
     rust-analyzer
     gopls

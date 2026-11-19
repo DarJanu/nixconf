@@ -7,7 +7,6 @@
     #    ./arduinotools
   ];
 
-  services.onedrive.enable = true;
   services.fwupd.enable = true;
 
   programs = {
@@ -69,65 +68,30 @@
   hardware.rtl-sdr.enable = true;
   services.flatpak.enable = true;
   environment.systemPackages = with pkgs; [
-    minio-client
-    cilium-cli
-    talosctl
-    kubectl
-    kubernetes-helm
     nanovna-qt
     nanovna-saver
-    sdrpp
-    satdump
-    sdrangel
-    readsb
 
-    root
-    nmap
-    sofa
-    julia-lts
-    octave
-    csxcad
-    appcsxcad
-    xnec2c
     kicad
     fritzing
-    paraview
-    librecad
-
-    ckan
-
-    btop
-    proton-vpn
-    cloudflared
-    mediawriter
     screen
+
     ubridge
     vscode
-    qtcreator
     python3
     nixd
     freecad
-    pineflash
-    thonny
-    prusa-slicer
     gh
-    gns3-gui
-    gns3-server
-    inetutils
     acpi
     alsa-utils
     bash
     wget
     alejandra
     playerctl
-    pango
     networkmanagerapplet
-    wofi
     kdePackages.dolphin
     transmission_4
     spotify
     mono
-    gtk2
     gtk3
     gtk4
     cups
@@ -136,7 +100,6 @@
     mozillavpn
     docker-compose
     wine
-    calibre
     wireshark
     rawtherapee
   ];
