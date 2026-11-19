@@ -77,6 +77,8 @@
     fritzing
     screen
 
+    julia
+
     ubridge
     vscode
     python3
