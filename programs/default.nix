@@ -9,6 +9,7 @@
 
   services.fwupd.enable = true;
   services.cloudflare-warp.enable = true;
+  programs.fuse.enable = true;
   programs = {
     wireshark = {
       enable = true;
@@ -83,6 +84,7 @@
     julia
 
     fuse3
+    sshfs
 
     ubridge
     vscode
