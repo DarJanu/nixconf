@@ -8,7 +8,7 @@
   ];
 
   services.fwupd.enable = true;
-
+  services.cloudflare-warp.enable = true;
   programs = {
     wireshark = {
       enable = true;
@@ -68,6 +68,8 @@
   hardware.rtl-sdr.enable = true;
   services.flatpak.enable = true;
   environment.systemPackages = with pkgs; [
+    cloudflare-warp
+
     mesa
     vulkan-tools
 
