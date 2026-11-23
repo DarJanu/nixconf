@@ -82,6 +82,8 @@
 
     julia
 
+    fuse3
+
     ubridge
     vscode
     python3
