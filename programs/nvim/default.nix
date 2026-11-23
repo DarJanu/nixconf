@@ -127,6 +127,8 @@
           luasnip
           cmp_luasnip
           friendly-snippets
+          vimtex
+          cmp-vimtex
         ];
       };
     };
