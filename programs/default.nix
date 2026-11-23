@@ -7,6 +7,11 @@
     #    ./arduinotools
   ];
 
+  programs.appimage = {
+    enable = true;
+    binfmt = true; # lets you run ./Foo.AppImage directly
+  };
+
   services.fwupd.enable = true;
   services.cloudflare-warp.enable = true;
   programs.fuse.enable = true;
