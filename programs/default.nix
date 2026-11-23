@@ -9,7 +9,27 @@
 
   programs.appimage = {
     enable = true;
-    binfmt = true; # lets you run ./Foo.AppImage directly
+    binfmt = true;
+    package = pkgs.appimage-run.override {
+      extraPkgs = p:
+        with p; [
+          cairo
+          pango
+          glib
+          gdk-pixbuf
+          fontconfig
+          freetype
+          giflib
+          libexif
+          libtiff
+          libpng
+          libjpeg
+          libx11
+          libxext
+          libxrender
+          libxcursor
+        ];
+    };
   };
 
   services.fwupd.enable = true;
