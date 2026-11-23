@@ -154,5 +154,7 @@
     vscode-langservers-extracted
     yaml-language-server
     marksman
+    texmaker
+    texliveFull
   ];
 }
