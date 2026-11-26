@@ -94,6 +94,8 @@
   hardware.rtl-sdr.enable = true;
   services.flatpak.enable = true;
   environment.systemPackages = with pkgs; [
+    wireguard-tools
+
     cloudflare-warp
 
     mesa
